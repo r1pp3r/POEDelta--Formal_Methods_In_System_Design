@@ -1,0 +1,172 @@
+\message{<Jon G. Hall and Lucia Rapanotti's POE Justification Style, 27 January 2010>}
+\NeedsTeXFormat{LaTeX2e}[1995/06/01]
+\ProvidesPackage{POE}
+         [2010/01/27 v0.1 POE Formatting Macros (POEFM)]
+\RequirePackage{prooftree,cancel}
+
+%============Our stuff==================
+%=====================================
+%=====================================
+\renewcommand{\lg}{\ensuremath{[\![}}
+\newcommand{\rg}{\ensuremath{]\!]}}
+
+\def\argev{\item{\sc Argument \& Evidence}:\quad}
+\def\claim{\item{\sc Claim}:\quad}
+
+\def\largue{\ensuremath{\langle\!\langle}}
+\def\rargue{\ensuremath{\rangle\!\rangle}}
+\def\lcode{\ensuremath{|\![}}
+\def\rcode{\ensuremath{]\!|}}
+
+\def\GammaL{\ensuremath{\mathop{\Gamma_{L}}}}
+\def\GammaT{\ensuremath{\mathop{\Gamma_{T}}}}
+
+%%Jon's fonts
+%%\usepackage[scaled=0.90]{helvet}
+%%\usepackage{helvet}
+
+%Jon's modified rule form
+\def\strategy#1{[{\sc #1}]}
+\def\sat{\mathrel{\mathbf{sat}}}
+\def\discharged#1{{\largue #1{}\rargue}}
+\def\pvpdischarged#1{{\lpvp #1{}\rpvp}}
+\def\bstrategy#1{\bcancel{[{\sc #1}]}}
+\def\bdischarged#1{\bcancel{\largue #1{}\rargue}}
+
+\makeatletter
+\def\bhow{\@ifnextchar [{\bhow@}{\bhow@[1.4in]}}
+\def\bhow@[#1]#2{\@ifnextchar [{\bhow@@[#1]{#2}}{\bhow@@short[#1]{#2}}}
+\def\bhow@@[#1]#2[#3]{\parbox[m]{#1}{\renewcommand{\baselinestretch}{1}\scriptsize\bstrategy{#2}\par\bdischarged{#3}}}
+\def\bhow@@short[#1]#2{\parbox[m]{#1}{\renewcommand{\baselinestretch}{1}\scriptsize\bstrategy{#2}}}
+
+\def\how{\@ifnextchar [{\how@}{\how@[\linegoal]}}
+\def\how@[#1]#2{\@ifnextchar [{\how@@[#1]{#2}}{\how@@short[#1]{#2}}}
+\def\how@@[#1]#2[#3]{\begin{varwidth}{#1}{\renewcommand{\baselinestretch}{1}\scriptsize\strategy{#2}\par\discharged{#3}}\end{varwidth}}
+
+\def\how@@short[#1]#2{\begin{varwidth}{#1}{\renewcommand{\baselinestretch}{1}\scriptsize\strategy{#2}}\end{varwidth}}
+
+\def\pvp{\@ifnextchar [{\pvp@}{\pvp@[1.4in]}}
+\def\pvp@[#1]#2{\!\!\!$\Big<$\begin{varwidth}{#1}{\renewcommand{\baselinestretch}{1}\scriptsize#2}\end{varwidth}}
+\makeatother
+
+\def\devhead#1{\vbox{%
+	\hrule depth 1pt%
+	\hbox to \columnwidth{\vrule depth 2pt width 1pt%
+		\hskip 0pt plus1fill%
+		\vrule depth 2pt width 1pt}%
+	\hrule%
+	\hbox to \columnwidth{%
+		\vrule width 1pt%
+		\hskip 0pt plus1fill%
+		\parbox{0.8\columnwidth}{\centering\vphantom{|}\emph{#1}}%
+		\hskip 0pt plus1fill%
+		\vrule width 1pt}%
+	}%
+	\nointerlineskip%
+	\hbox to \columnwidth{\vrule depth 2pt width 1pt%
+		\hskip 0pt plus1fill%
+		\vrule depth 2pt width 1pt}%
+}%
+\def\devmid{%
+	\vbox to 0pt{%
+		\hbox to \columnwidth{%
+			\vrule depth 4pt width 1pt%
+			\hskip 0pt plus1fill%
+			\vrule depth 4pt width 1pt%
+		}%
+		\hrule%
+		\hbox to \columnwidth{%
+			\vrule depth 4pt width 1pt%
+			\hskip 0pt plus1fill%
+			\vrule depth 4pt width 1pt%
+		}%
+	}%
+}
+\def\devfoot{%
+	\vbox to 0pt{%
+		\hbox to \columnwidth{%
+			\vrule depth 8pt width 1pt%
+			\hskip 0pt plus1fill%
+			\vrule depth 8pt width 1pt%
+		}%
+		\hrule%
+		\hbox to \columnwidth{%
+			\vrule depth 2pt width 1pt%
+			\hskip 0pt plus1fill%
+			\vrule depth 2pt width 1pt%
+		}%
+		\hrule depth 1pt%
+	}%
+}
+\def\devitem#1{{\em #1}}
+
+
+\newenvironment{development}[2]{\vspace{1ex}\devhead{\textsc{Step #1}:\quad #2}\nobreak\bgroup\nobreak\selectfont\small\list{}{\leftmargin=1.5ex\rightmargin=\leftmargin}\nobreak\item\relax\nobreak}{\endlist\egroup\unskip\nointerlineskip\devfoot\vspace{2em}}
+
+\newenvironment{concern}[2]{\item{\sc Concern}:\quad #1\\{\sc Status}:\quad #2\bgroup\list{}{\leftmargin=2ex}}{\endlist\egroup}
+\def\just#1{{\sc Justification #1}:\quad}
+\def\desc{\item{\sc Descriptions \& Phenomena}:\quad}
+\def\incl{\item{\sc Includes}:\quad}
+\def\risk{\item{\sc Risks}:\quad}
+\def\argev{\item{\sc Argument \& Evidence}:\quad}
+\def\claim{\item{\sc Claim}:\quad}
+
+\newenvironment{validityconcern}[1]{\begin{concern}{Step Validity}{#1}}{\end{concern}}
+\def\details{\item{\sc Details}:\quad}
+\def\stakeholder{\item{\sc Signatory}:\quad}
+\def\undischarged{\item{\sc Details}:\quad}
+\def\phen{\item{\sc Phenomena}:\quad}
+
+
+\newbox\figbox
+\def\makeheight#1#2{\setbox\figbox=\vbox{\hbox{#2}}\lower #1\ht\figbox\box\figbox}
+\def\halfheight#1{\makeheight{0.5}{#1}}
+\def\zeroheight#1{\makeheight{1}{#1}}
+
+\def\context#1{\left[#1\right]}
+\def\solution#1{\left(#1\right)}
+\def\requirement#1{#1}
+\def\problemcontext#1#2{#1\solution{#2}}
+\def\problem#1;#2\meets#3\endproblem{\problemcontext{#1}{#2}\meets\requirement{#3}}
+\def\astruct#1:#2;#3\endastruct{#1:\problemcontext{#2}{#3}}
+\def\namedproblem#1:#2;#3\meets#4\endproblem{#1:\problemcontext{#2}{#3}\meets\requirement{#4}}
+
+%%dacdic commends
+\newcommand{\xform}[1]{\mathop{\textbf{rule}\ \textrm{\sc #1}}}
+\newcommand{\sem}[1]{#1}%\mathop{[\![ #1]\!]}}
+\newcommand{\tdacdic}[1]{\mathop{\textbf{\dacdic}}\ \textrm{\sc #1}}
+\newcommand{\zero}{\mathop{\textbf{zero}}}
+\newcommand{\one}{\mathop{\textbf{one}}}
+\newcommand{\two}{\mathop{\textbf{two}}}
+\newcommand{\tskip}{\mathop{\textbf{skip}}}
+\newcommand{\fail}{\mathop{\textbf{fail}}}
+\newcommand{\abort}{\mathop{\textbf{abort}}}
+\newcommand{\PStruct}{\mathop{\textit{DState}}}
+\newcommand{\alllists}[1]{[#1]}
+\newcommand{\dacdic}{dactic}
+\newcommand{\Dacdic}{Dactic}
+\newcommand{\dacdical}{dactical}
+\newcommand{\Dacdical}{Dactical}
+\newcommand{\choice}{\mathbin{|}}
+\newcommand{\sq}{\mathbin{;}}
+\newcommand{\plel}{\mathbin{\|}} 
+\newcommand{\exhaust}{\mathop{exhaust}}
+\newcommand{\cut}{\mathop{!}}
+\def\pfun{\nrightarrow}
+\def\seq{\mathop{\textrm{seq}}}
+\def\meets{\Vdash}
+
+%%for Acronym definition and expansion
+\def\POE#{\xdef\POE##{POE}Problem Oriented Engineering (shortly \POE{}, \cite{Hall2009JAdvSysMeas})}
+\def\POSE#{\xdef\POSE##{POSE}Problem Oriented Software Engineering (shortly \POSE{}, \cite{Hall:2008jt})}
+
+%Typesets the justification using the full line length, but no longer
+\RequirePackage{linegoal}
+\newcommand{\steprat}[1]{\begin{varwidth}{\linegoal}{\scriptsize\largue#1\rargue\par}\end{varwidth}}
+\newcommand{\tinysteprat}[1]{\begin{varwidth}{\linegoal}{\tiny\largue#1\rargue\par}\end{varwidth}}
+%\newcommand{\steprat}[1]{\begin{minipage}{\linegoal}{\linespread{0.5}\tiny <<#1>>hello, hello, hello, hello, hello, hello, }\end{minipage}}
+
+
+%=====================================
+%=====================================
+%=====================================

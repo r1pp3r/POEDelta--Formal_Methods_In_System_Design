@@ -1,0 +1,82 @@
+;; RefTeX parse info file
+;; File: /Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex
+;; User: r1pp3r (Georgi Markov)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/")
+
+(label-numbers)
+
+(bof "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex")
+
+(toc "toc" "    1 Introduction" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 2 "1" "\\section{Introduction}" 1441)
+
+("sect:Intro" "s" "Hybrid systems refer to systems exhibiting a mix of discrete and continuous behaviour - continuous c" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "    2 Background" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 2 "2" "\\section{Background}" 3434)
+
+("sect:background" "s" "\\subsection{A Calculus for Hybrid CSP}  Chaochen's Hybrid CSP \\cite{chaochen1996formal} extends Hoar" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "      2.1 A Calculus for Hybrid CSP" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 3 "2.1" "\\subsection{A Calculus for Hybrid CSP}" 3480)
+
+("subsect:intr.calc4hcsp" "s" "Chaochen's Hybrid CSP \\cite{chaochen1996formal} extends Hoare's original CSP language \\cite{hoare198" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "      2.2 POE \\& POE-$\\Delta$, and the notion of Phenomena" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 3 "2.2" "\\subsection{POE \\& POE-$\\Delta$, and the notion of Phenomena}" 7798)
+
+("subsect:intr.poe" "s" "\\POE{}, defined by the second and third authors, is an engineering framework with an accumulated bod" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+("CPS\\arabic*." "i" "NO MATCH FOR CONTEXT REGEXP" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "    3 Towards A Phenomena Based HCSP" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 2 "3" "\\section{Towards A Phenomena Based HCSP}" 14393)
+
+("subsect:phenomhcsp" "s" "In this section we attempt to define a strong link between HSCP and POE/POE-$\\Delta$ which will allo" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "      3.1 Unit Domains" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 3 "3.1" "\\subsection{Unit Domains}" 15144)
+
+("subsect:phenomhcsp.singlePhenDom" "s" "Phenomena, as already briefly discussed in section \\ref{subsect:intr.poe}, are the core building blo" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "      3.2 Semantics of HCSP" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 3 "3.2" "\\subsection{Semantics of HCSP}" 16622)
+
+("subsect:phenomhcsp.semantics" "s" "As a running example we will use the following HCSP expression, which combines a couple of different" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "          3.2.0.1 The channel output: ch!5" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 5 "3.2.0.1" "\\paragraph{The channel output: ch!5}" 17413)
+
+("fig:ChannelOutput" "f" "Graphical depiction of the HCSP channel output semantics" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "          3.2.0.2 The channel input: ch?x" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 5 "3.2.0.2" "\\paragraph{The channel input: ch?x}" 19189)
+
+("fig:ChannelInput" "f" "Graphical depiction of the HCSP channel input semantics" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "          3.2.0.3 Value Assignment: y:=x" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 5 "3.2.0.3" "\\paragraph{Value Assignment: y:=x}" 20291)
+
+("fig:Assignment" "f" "Graphical depiction of the Assignment semantics" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "          3.2.0.4 Building complex terms from primitives" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 5 "3.2.0.4" "\\paragraph{Building complex terms from primitives}" 20700)
+
+("fig:Sequence" "f" "Graphical depiction of the sequential operator semantics" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+("fig:Parallel" "f" "Graphical depiction of the sequential operator semantics" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "          3.2.0.5 Application of HCSP in POE/POE-$\\Delta$" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 5 "3.2.0.5" "\\paragraph{Application of HCSP in POE/POE-$\\Delta$}" 22816)
+
+("fig:Parallel" "f" "Graphical representation of the $ch!5 || (ch?x; y := x)$ example in POE" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(toc "toc" "    4 Conclusion" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil 2 "4" "\\section{Conclusion}" 24052)
+
+("sect:Conclusion" "s" "TBD %--------------------------------------------------------------------- % BIBLIOGRAPHY %---------" "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex" nil)
+
+(bib "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Literature.bib")
+
+(eof "/Users/r1pp3r/github.com/POE-Δ_GitHub/Formal Methods in System Design Formal Methods in System Design/LaTeX/Towards A Formal Approach For Change Management In Informations Systems With Diverse Descriptions.tex")
+))
+
